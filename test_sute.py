@@ -61,8 +61,10 @@ def main(prg_name, zip_name):
             print(f'за {(end - start)/1_000_000:.0f} ms')
             if not rez:
                 print(f'|{test_out.encode()}|{out.encode()}|')
+                break
             if rc:
                 print(err)
+                break
 
     rmdir(tmp_dir)
 
